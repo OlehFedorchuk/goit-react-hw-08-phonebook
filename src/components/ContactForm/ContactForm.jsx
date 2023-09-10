@@ -13,7 +13,7 @@ const ContactForm = () => {
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
 
-  // зміна значень інпутів
+  
   const handleChange = ({ target }) => {
     const { name, value } = target;
 
@@ -29,7 +29,7 @@ const ContactForm = () => {
     }
   };
 
-  //відправка форми
+ 
   const handleSubmit = event => {
     event.preventDefault();
 
@@ -37,7 +37,7 @@ const ContactForm = () => {
       contact => contact.name.toLowerCase().trim() === name.toLowerCase().trim()
     );
 
-    // Проверяет, существует ли контакт с таким же именем в списке контактов. Если контакт уже существует, выводится предупреждение.
+    
     if (isContactExist) {
       toast.warn(`${name} is already in contacts`, {
         position: toast.POSITION.TOP_RIGHT,
@@ -46,7 +46,7 @@ const ContactForm = () => {
       return;
     }
 
-    //виклик з App з передачею нового контакту
+    
     dispatch(addContactsThunk({ name, number }));
     toast.success('The contact successfully created', {
       position: toast.POSITION.TOP_RIGHT,

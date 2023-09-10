@@ -4,8 +4,8 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgba(45, 85, 250, 0.8);
+  box-shadow: 0px 3px 5px 0px rgba(255, 255, 0, 0.9);
 `;
 
 export const Header = styled.header`
@@ -19,5 +19,5 @@ export const Header = styled.header`
   padding-bottom: 6px;
   /* padding-left: 46px;
   padding-right: 46px; */
-  color: white;
+  /* color: white; */
 `;
