@@ -7,7 +7,7 @@ const filterSlice = createSlice({
   initialState: initialFilterState,
   reducers: {
     changeFilter(state, action) {
-      return (state = action.payload); // Оновлення значення фільтру на основі переданого екшину
+      return (state = action.payload); 
     },
   },
 });

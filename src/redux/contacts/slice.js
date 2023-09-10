@@ -38,7 +38,6 @@ export const contactSlice = createSlice({
   },
 });
 
-// export const contactsReducer = contactSlice.reducer;
 
 export const contactsReducer = persistReducer(
   { key: 'contacts', storage },

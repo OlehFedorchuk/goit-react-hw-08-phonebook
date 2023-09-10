@@ -14,7 +14,7 @@ const token = {
 const register = createAsyncThunk('auth/register', async credentials => {
   try {
     const { data } = await axios.post('users/signup', credentials);
-    token.set(data.token); //глобально сетимо токен на подальші запити
+    token.set(data.token);
     return data;
   } catch (error) {
     console.error('Помилка реєстрації:', error.response.data);
@@ -43,7 +43,7 @@ const refreshUser = createAsyncThunk(
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
 
-    //якщо розлогінений і нема токену, то виходимо. thunkAPI.rejectWithValue();бо return вертає undefined і тоді помилки при рефрешЮзер
+    
     if (persistedToken === null) {
       return thunkAPI.rejectWithValue();
     }
