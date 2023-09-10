@@ -7,7 +7,6 @@ export const Label = styled.label`
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
-  color: #3bd9d9;
   font-size: 20px;
 `;
 
@@ -16,8 +15,5 @@ export const Input = styled.input`
   font: inherit;
   cursor: pointer;
   width: 200px;
-  background-color: transparent;
-  border: 1px solid white;
   border-radius: 12px;
-  color: white;
 `;

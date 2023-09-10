@@ -7,7 +7,6 @@ export const SectionWrap = styled.section`
 export const SectionTitle = styled.h2`
   text-align: center;
   font-size: 28px;
-  color: white;
   letter-spacing: 1px;
 `;
 
@@ -34,21 +33,18 @@ const animation = keyframes`
 
 export const SpanFirst = styled.span`
   position: absolute;
-  color: transparent;
   display: inline-block;
   font-size: 40px;
   letter-spacing: 4px;
   transform: translate(-50%, -50%);
-  -webkit-text-stroke: 0.5px #ddd;
+  
 `;
 
 export const SpanSecond = styled.span`
   position: absolute;
-  color: aqua;
   display: inline-block;
   font-size: 40px;
   letter-spacing: 4px;
   transform: translate(-50%, -50%);
-  -webkit-text-stroke: 1px #ddd;
   animation: ${animation} 3000ms ease-in-out infinite;
 `;

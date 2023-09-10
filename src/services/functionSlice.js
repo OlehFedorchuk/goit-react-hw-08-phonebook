@@ -18,7 +18,6 @@ export const handleFulfilled = (state, { error }) => {
 };
 
 export const handleFulfilledGet = (state, { payload }) => {
-  // handleFulfilled(state)
   state.items = payload;
 };
 

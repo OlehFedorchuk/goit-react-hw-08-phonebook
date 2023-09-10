@@ -24,7 +24,6 @@ export const App = () => {
   const userRefreshed = useSelector(authSelectors.getUserRefreshed);
 
   useEffect(() => {
-    // Виконує оновлення користувача лише раз, якщо він ще не був оновлений
     if (!userRefreshed) {
       dispatch(authOperations.refreshUser());
     }

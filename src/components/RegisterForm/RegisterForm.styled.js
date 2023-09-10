@@ -11,7 +11,6 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  /* color: #3bd9d9; */
   font-size: 20px;
 `;
 

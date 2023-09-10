@@ -10,6 +10,6 @@ export const Title = styled.h1`
   font-weight: 600;
   font-size: 52px;
   text-align: center;
-  color: lightgrey;
+  color: gray;
   border-color: white;
 `;

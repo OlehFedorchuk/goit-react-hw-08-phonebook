@@ -10,7 +10,6 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  color: #3bd9d9;
   font-size: 20px;
 `;
 
@@ -18,25 +17,24 @@ export const Input = styled.input`
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 12px;
-  color: white;
+  border-radius: 10px;
 `;
 
 export const Button = styled.button`
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
-  border-radius: 20px;
-  border: none;
-  background-color: lightgray;
+  border-radius: 10px;
+  border-color: #fff;
+  background-color: #5977FC;
   font-size: 20px;
-  color: black;
-  transition: transform 250ms linear, box-shadow 250ms linear;
+  color: white;
+  box-shadow: inset 0 3px 4px #ffffff, inset 0 -3px 4px lightblue;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 4px #fff, 0 -3px 4px #ffffff;
 
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 12px lightblue, inset 0px -6px 12px lightblue;
   }
+   
 `;

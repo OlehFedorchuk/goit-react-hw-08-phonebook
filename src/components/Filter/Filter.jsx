@@ -9,11 +9,11 @@ import { getContactsThunk } from 'redux/contacts/thunk';
 const filterInputId = nanoid();
 
 const Filter = () => {
-  const contacts = useSelector(getContacts); //отримання контактів зі стору через селекттор
+  const contacts = useSelector(getContacts);
   const dispatchContact = useDispatch();
 
   useEffect(() => {
-    dispatchContact(getContactsThunk()); //асинхронно отримуємо контакти
+    dispatchContact(getContactsThunk()); 
   }, [dispatchContact]);
 
   const value = useSelector(getFilter);
@@ -29,11 +29,11 @@ const Filter = () => {
     <>
       {contacts.length > 0 ? (
         <Label>
-          Find contacts by name
+        
           <Input
             type="text"
             name="filter"
-            placeholder="Enter contact name"
+            placeholder="Find contacts by name"
             value={value}
             onChange={handleChangeFilter}
             id={filterInputId}

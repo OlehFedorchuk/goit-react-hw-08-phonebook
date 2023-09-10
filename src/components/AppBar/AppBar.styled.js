@@ -14,10 +14,6 @@ export const Header = styled.header`
   height: 56px;
   justify-content: space-between;
   align-items: center;
-  /* gap: 190px; */
   padding-top: 6px;
   padding-bottom: 6px;
-  /* padding-left: 46px;
-  padding-right: 46px; */
-  /* color: white; */
 `;
