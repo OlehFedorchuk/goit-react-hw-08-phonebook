@@ -20,7 +20,6 @@ const authPersistConfig = {
   whitelist: ['token'],
 };
 
-// створюємо store
 export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authSlice),
@@ -28,7 +27,7 @@ export const store = configureStore({
     filter: filterReducer,
   },
 
-  // щоб не було помилок, ігнорування деяких типів екшенів
+ 
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
@@ -37,5 +36,5 @@ export const store = configureStore({
     }),
 });
 
-//створення стора, який зберігає стан при перезавантаженні
+
 export const persistor = persistStore(store);
