@@ -27,14 +27,15 @@ export const Button = styled.button`
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
-  border-radius: 20px;
-  border: none;
+  border-radius: 10px;
+  border-color: #fff;
+  background-color: lightgray;
   font-size: 20px;
-  color: black;
+  color: white;
   transition: transform 250ms linear, box-shadow 250ms linear;
 
   &:hover {
     transform: scale(1.1);
-    box-shadow: 0px 6px 12px lightblue, inset 0px -6px 12px lightblue;
+    
   }
 `;

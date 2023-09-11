@@ -24,16 +24,14 @@ export const Button = styled.button`
   width: 80px;
   padding: 6px;
   border-radius: 8px;
-  /* border: none; */
   border-color: #fff;
   font-size: 17px;
   cursor: pointer;
   color: white;
-  background-color: #5977FC;
-  box-shadow: inset 0 3px 4px #ffffff, inset 0 -3px 4px lightblue;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: lightgray;
+  transition: transform 250ms linear, box-shadow 250ms linear;
   &:hover,
   &:focus {
-    box-shadow: 0 3px 4px #fff, 0 -3px 4px #ffffff;
+    transform: scale(1.1);
   }
 `;

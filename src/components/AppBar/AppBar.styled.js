@@ -4,8 +4,8 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgba(45, 85, 250, 0.8);
-  box-shadow: 0px 3px 5px 0px rgba(255, 255, 0, 0.9);
+  background-color: darkgray;
+  box-shadow: 0px 3px 5px 0px lightgray;
 `;
 
 export const Header = styled.header`

@@ -11,6 +11,7 @@ export const Label = styled.label`
   flex-direction: column;
   margin-bottom: 20px;
   font-size: 20px;
+  color: darkgray;
 `;
 
 export const Input = styled.input`
@@ -26,15 +27,14 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 10px;
   border-color: #fff;
-  background-color: #5977FC;
+  background-color: lightgray;
   font-size: 20px;
   color: white;
-  box-shadow: inset 0 3px 4px #ffffff, inset 0 -3px 4px lightblue;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear, box-shadow 250ms linear;
   &:hover,
   &:focus {
-    box-shadow: 0 3px 4px #fff, 0 -3px 4px #ffffff;
-
+    transform: scale(1.1);
   }
    
 `;
+
